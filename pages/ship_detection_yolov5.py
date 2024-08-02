@@ -8,23 +8,23 @@ st.header('Object Detection with YOLO')
 
 st.header('Model Training Information')
 
-# Информация о процессе обучения
-num_epochs = 50
-train_size = 13400
-validation_size = 1340
-test_size = 2680
+# # Информация о процессе обучения
+# num_epochs = 50
+# train_size = 13400
+# validation_size = 1340
+# test_size = 2680
 
-st.write(f"Number of Epochs: {num_epochs}")
-st.write(f"YOLOv5 Type: M")
-st.write(f"Size of Train Dataset: {train_size}, Validation: {validation_size}, Test: {test_size} images")
+# st.write(f"Number of Epochs: {num_epochs}")
+# st.write(f"YOLOv5 Type: M")
+# st.write(f"Size of Train Dataset: {train_size}, Validation: {validation_size}, Test: {test_size} images")
 
-# Метрики (примерные, добавьте свои графики и матрицы)
-results = './images/nat_results.png'
-PR_curve = './images/nat_PR_curve.png'
+# # Метрики (примерные, добавьте свои графики и матрицы)
+# results = './images/nat_results.png'
+# PR_curve = './images/nat_PR_curve.png'
 
-st.header('Training Performance Plots')
-st.image(results, caption='Results', use_column_width=True)
-st.image(PR_curve, caption='PR Curve', use_column_width=True)
+# st.header('Training Performance Plots')
+# st.image(results, caption='Results', use_column_width=True)
+# st.image(PR_curve, caption='PR Curve', use_column_width=True)
 
 @st.cache_resource
 def get_model(conf):
